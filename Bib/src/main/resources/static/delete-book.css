@@ -1,0 +1,113 @@
+/* Setări globale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dc3545; /* Culoarea de fundal la culoarea butoanelor */
+    color: #fff; /* Textul va fi alb pentru contrast */
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    flex-direction: column; /* Permite organizarea elementelor pe verticală */
+}
+
+/* Titlu */
+h1 {
+    color: #fff; /* Textul titlului va fi alb */
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    top: 3cm; /* Așezăm h1 la 3 cm de sus */
+}
+
+/* Formular */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    background-color: #fff; /* Fundal alb pentru formular */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Etichete (label) */
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333; /* Culoare text etichete */
+}
+
+/* Câmpuri de input */
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus pe câmpurile de input */
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Butonul de căutare */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #dc3545; /* Culoarea butonului se păstrează roșie */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Efecte hover și active pentru buton */
+button:hover {
+    background-color: #b02a37; /* Culoare mai închisă la hover */
+}
+
+button:active {
+    transform: translateY(2px); /* Mică animație de apăsare */
+}
+
+/* Buton pentru întoarcere la pagina anterioară */
+#back-button {
+    margin-top: 2cm; /* Poziționează butonul la 2 cm sub butonul de căutare */
+    padding: 12px 20px;
+    background-color: #28a745; /* Verde pentru butonul de întoarcere */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecte hover și active pentru butonul de întoarcere */
+#back-button:hover {
+    background-color: #218838;
+}
+
+#back-button:active {
+    transform: translateY(2px); /* Mică animație de apăsare */
+}
+
+/* Mesaj status */
+#status-message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #fff; /* Mesajul va fi alb pentru a fi vizibil pe fundalul roșu */
+    text-align: center;
+}

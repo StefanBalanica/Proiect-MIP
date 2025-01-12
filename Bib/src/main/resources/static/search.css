@@ -1,0 +1,139 @@
+/* Setări globale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 20px;
+    position: relative;
+}
+
+/* Titlu */
+h1 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    position: absolute;
+    top: 3cm; /* Distanta fata de top */
+    left: 50%; /* Centrat pe orizontală */
+    transform: translateX(-50%); /* Corectează pentru a fi exact în mijloc */
+}
+
+/* Form */
+form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 470px; /* Mărim cu 3 cm lățimea față de valoarea anterioară de 440px */
+    width: 100%;
+    background-color: white;
+    padding: 22px; /* Ajustăm padding-ul pentru a compensa mărirea */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: calc(3cm + 2cm); /* Plasat sub h1 cu 2 cm */
+    left: 50%;
+    transform: translateX(-50%); /* Centrat pe orizontală */
+}
+
+/* Câmpuri de input */
+input {
+    padding: 12px; /* Creștem padding-ul pentru a face input-ul mai mare */
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    width: calc(100% - 130px); /* Lăsăm loc pentru butonul mai mare */
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Buton */
+button {
+    padding: 12px 24px; /* Creștem dimensiunea butonului */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 12px; /* Creștem distanța dintre input și buton */
+}
+
+/* Buton hover și active */
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+/* Rezultate */
+#results {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    position: absolute;
+    top: calc(3cm + 2cm); /* Plasat sub h1 */
+    left: 2cm; /* Plasat la 2cm față de left */
+    transform: translateX(0); /* Nu se corectează cu translateX deoarece left a fost definit */
+}
+
+#results h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#results ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#results li {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    form {
+        padding: 15px;
+        width: 90%;
+    }
+
+    button {
+        padding: 10px 25px;
+    }
+
+    #results h2 {
+        font-size: 22px;
+    }
+
+    #results li {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,89 @@
+/* Setări globale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00bfae; /* Culoare albastru-verzui pentru fundal */
+    color: #fff; /* Textul va fi alb pentru contrast */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Titlu */
+h1 {
+    color: #fff; /* Culoare albă pentru titlu */
+    text-align: center;
+    margin-top: 1cm; /* Așezăm h1 la 1 cm de sus pentru a-l ridica cu 2 cm */
+    margin-bottom: 30px; /* Adăugăm puțin spațiu sub h1 pentru a crea distanță */
+}
+
+/* Formular */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    background-color: white; /* Fundal alb pentru formular */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 18px; /* Ridicăm formularul cu 2 cm față de poziția anterioară */
+}
+
+/* Etichete (label) */
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333; /* Culoare text etichete */
+}
+
+/* Câmpuri de input și select */
+input, select {
+    padding: 10px;
+    margin-top: 10px; /* Distanță mai mare între câmpuri pentru vizibilitate */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Buton */
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efect hover pentru buton */
+button:hover {
+    background-color: #0056b3; /* Culoare mai închisă la hover */
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    form {
+        width: 90%; /* Ajustăm lățimea formularului pe ecrane mici */
+    }
+
+    h1 {
+        font-size: 28px; /* Redimensionăm titlul pe ecrane mici */
+    }
+
+    button {
+        padding: 10px 25px; /* Ajustăm dimensiunea butonului pe ecrane mici */
+    }
+}

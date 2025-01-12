@@ -1,0 +1,158 @@
+/* Setări globale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+/* Container principal */
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    text-align: center;
+    position: relative; /* Important pentru a putea folosi poziționarea absolută */
+}
+
+/* Titluri */
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 0; /* Eliminăm marginea implicită */
+    position: absolute;
+    top: 3cm; /* Plasăm h1 la 3 cm de sus */
+    left: 50%;
+    transform: translateX(-50%); /* Centram h1 pe orizontală */
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+    position: absolute;
+    top: calc(3cm + 2cm); /* 2 cm sub h1 */
+    left: 50%; /* Centram h2 pe orizontală */
+    transform: translateX(-50%); /* Centram h2 pe orizontală */
+    text-align: center; /* Aliniere pe centru */
+    width: auto; /* Dimensiune automată pentru a se ajusta la conținut */
+}
+
+h3 {
+    font-size: 20px;
+    color: #333;
+    position: absolute;
+    top: calc(3cm + 4cm); /* 2 cm sub h2 */
+    left: 50%; /* Centram h3 pe orizontală */
+    transform: translateX(-50%); /* Centram h3 pe orizontală */
+    text-align: center; /* Aliniere pe centru */
+    width: auto; /* Dimensiune automată pentru a se ajusta la conținut */
+}
+
+/* Titluri cărți și elemente adiționale */
+.book-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px; /* Adăugăm un spațiu între h3 și lista de cărți */
+    position: absolute;
+    top: calc(3cm + 6cm); /* 2 cm sub h3 */
+    left: 50%; /* Centram lista de cărți */
+    transform: translateX(-50%); /* Centram lista de cărți pe orizontală */
+    width: auto; /* Asigurăm că lista ocupă întregul container */
+}
+
+.book-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center; /* Centram lista de cărți */
+}
+
+.book-list li {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Stiluri buton */
+button {
+    padding: 12px 30px;
+    background-color: #00bfae;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #028e7d;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+/* Efecte subtile la hover pe container */
+.container:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Elemente de text */
+p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+        left: 20px;
+        width: auto;
+    }
+
+    .book-list {
+        left: 20px;
+        width: auto;
+    }
+
+    h3 {
+        font-size: 18px;
+        left: 20px;
+        width: auto;
+    }
+
+    button {
+        padding: 10px 25px;
+    }
+}

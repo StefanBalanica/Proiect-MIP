@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caută Cărți</title>
+    <link rel="stylesheet" href="search.css">
+</head>
+<body>
+<h1>Caută Cărți în Bibliotecă</h1>
+<form id="search-form">
+    <label for="query">Caută după titlu sau autor:</label>
+    <input type="text" id="query" name="query" placeholder="Introdu titlul sau autorul..." required>
+    <button type="submit">Caută</button>
+</form>
+
+<div id="results">
+    <h2>Rezultate</h2>
+    <ul id="results-list"></ul>
+</div>
+
+<button onclick="location.href='index.html'">Înapoi la Pagina Principală</button>
+
+<script src="search.js"></script>
+</body>
+</html>

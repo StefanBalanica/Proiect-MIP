@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaugă Carte</title>
+    <link rel="stylesheet" href="add-book.css">
+</head>
+<body>
+<h1>Adaugă o Carte Nouă</h1>
+<form id="add-book-form">
+    <label for="title">Titlu:</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="author">Autor:</label>
+    <input type="text" id="author" name="author" required>
+
+    <label for="publisher">Editura:</label>
+    <input type="text" id="publisher" name="publisher" required>
+
+    <label for="available">Disponibilitate:</label>
+    <select id="available" name="available" required>
+        <option value="true">Disponibil</option>
+        <option value="false">Indisponibil</option>
+    </select>
+
+    <button type="submit">Adaugă Carte</button>
+</form>
+<button onclick="location.href='index.html'">Înapoi la Pagina Principală</button>
+
+<script src="add-book.js"></script>
+</body>
+</html>
