@@ -16,14 +16,6 @@ public class Book {
     private String publisher;
     private boolean available;
 
-    public Book() {}
-
-    public Book(String title, String author, String publisher, boolean available) {
-        this.title = title;
-        this.author = author;
-        this.publisher = publisher;
-        this.available = available;
-    }
 
     // Getters și Setters
     public Long getId() {
@@ -59,7 +51,11 @@ public class Book {
     }
 
     public boolean isAvailable() {
-        return available;
+        if (available) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public void setAvailable(boolean available) {

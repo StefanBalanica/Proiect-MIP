@@ -11,5 +11,5 @@ public interface BookRepository extends JpaRepository<Book, Long> {
     List<Book> findTop5ByOrderByIdDesc(); // Cele mai recente 5 cărți
 
     List<Book> findByTitleContainingIgnoreCaseOrAuthorContainingIgnoreCase(String title, String author);
-
 }
+
